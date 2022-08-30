@@ -40,6 +40,7 @@ export const EntitiesEditCategoriesSelector = styled.div`
     height: 2.5rem;
     border-bottom: 1px solid ${theme.colors.secondaryColor};
     padding: 0 1.5rem;
+    font-family: ${theme.constants.bodyFontFamily};
     box-sizing: border-box;
   `}
 `;
@@ -47,10 +48,12 @@ export const EntitiesEditCategoriesSelector = styled.div`
 export const EntitiesEditCategoriesButton = styled.button<ActiveButtonProps>`
   ${({ theme, active }) => css`
     height: 100%;
-    padding: 0 0.2rem;
+    padding: 0 3px;
+    width: 80px;
     box-sizing: border-box;
     background-color: ${theme.colors.primaryColor};
-    color: ${theme.colors.textLight};
+    color: ${theme.colors.terciaryColor};
+    font-family: ${theme.constants.bodyFontFamily};
     margin-right: 1.5rem;
     cursor: pointer;
 

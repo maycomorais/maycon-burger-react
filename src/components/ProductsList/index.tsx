@@ -15,6 +15,7 @@ const ProductsList = ({
 }: ProductsListProps) => {
   return (
     <Styled.ProductsListContainer>
+      <Styled.Card>
       {list.map((element) => (
         <ProductCard
           isFavoritesList={isFavoritesList}
@@ -23,6 +24,7 @@ const ProductsList = ({
           key={element.id}
         />
       ))}
+      </Styled.Card>
     </Styled.ProductsListContainer>
   );
 };

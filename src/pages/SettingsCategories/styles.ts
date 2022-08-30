@@ -39,6 +39,7 @@ export const EntitiesEditList = styled.div`
     box-sizing: border-box;
     gap: 1.5rem;
     overflow-y: scroll;
+    
   `}
 `;
 

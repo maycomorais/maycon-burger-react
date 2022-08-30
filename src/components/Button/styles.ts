@@ -4,7 +4,7 @@ import { Theme } from "../../types/styled-components";
 interface StyledButtonProps {
   theme: Theme;
   variant?: "disabled" | "cancel";
-  size?: "small" | "large" | "x-large";
+  size?: "small" | "large" | "x-large" | "ball";
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
@@ -18,6 +18,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     font-family: ${theme.constants.bodyFontFamily};
     font-size: 15px;
     line-height: 15px;
+    align-items: center;
     cursor: pointer;
 
     ${variant === "disabled" &&
@@ -50,6 +51,14 @@ export const StyledButton = styled.button<StyledButtonProps>`
     ${size === "x-large" &&
     css`
       width: 15.65rem;
+    `}
+
+    ${size === "ball" &&
+    css`
+      width: 50px;
+      border-radius: 50%;
+      box-shadow: 1px 2px 2px rgba(10, 4, 3, 0.8);
+      font-size: 20px;
     `}
   `}
 `;

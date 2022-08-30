@@ -6,11 +6,14 @@ interface CategoriesNavigationButtonProps {
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   background-color: #eeeeee;
   color: #970000;
-  overflow-y: scroll;
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   section {
     width: 100%;

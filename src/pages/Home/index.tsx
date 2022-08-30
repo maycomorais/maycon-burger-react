@@ -68,7 +68,7 @@ const Home = () => {
       <Styled.HomeContentContainer>
         <Styled.HomeContentHeader>
           <Styled.TitleContainer>
-            <h1>Burguer Fresh</h1>
+            <h1>Maycon Burger</h1>
             <p>{formatedDate}</p>
           </Styled.TitleContainer>
           <Styled.SearchInputContainer>

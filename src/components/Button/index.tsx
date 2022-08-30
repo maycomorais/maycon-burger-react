@@ -4,7 +4,7 @@ import { StyledButton } from "./styles";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   variant?: "disabled" | "cancel";
-  size?: "small" | "large" | "x-large";
+  size?: "small" | "large" | "x-large" | "ball";
 }
 
 const Button = ({ text, variant, size, ...props }: ButtonProps) => {

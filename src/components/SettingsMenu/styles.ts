@@ -40,12 +40,14 @@ export const SettingsNavigationButtonContainer = styled.div<ActiveButtonProps>`
     cursor: pointer;
 
     h2 {
-      font-size: 14px;
+      font-size: 20px;
+      font-family: ${theme.constants.bodyFontFamily};
     }
 
     p {
-      font-size: 12px;
-      color: ${theme.colors.textLight};
+      font-size: 15px;
+      font-family: ${theme.constants.bodyFontFamily};
+      color: ${theme.colors.terciaryColor};
     }
 
     ${active &&
@@ -68,7 +70,7 @@ export const SettingsNavigationButtonSelected = styled.div<ActiveButtonProps>`
     svg {
       color: ${theme.colors.secondaryColor};
       position: absolute;
-      height: 30px;
+      height: 40px;
       left: -1.4rem;
     }
 

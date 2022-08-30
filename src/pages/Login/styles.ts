@@ -24,6 +24,10 @@ export const LoginFormContainer = styled.form`
     align-items: center;
     left: 0;
   `}
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const LoginLogoContainer = styled.div`

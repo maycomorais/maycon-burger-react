@@ -54,24 +54,29 @@ const ProductCard = ({
       .delete(`/favorites/${favoriteId}`, headers)
       .then(() => {
         handleGetFavorites();
-        toast.success("Produto desfavoritado com sucesso!");
+        toast.success("Retirado dos Favoritos com sucesso!");
       })
       .catch(() => toast.error("Erro"));
   };
 
   return (
     <Styled.CardContainer>
-      <img alt={product.name} src={product.image} />
-      <h4>{product.name}</h4>
-      <p>{product.price}</p>
-      <p>{product.description}</p>
+      <img src={product.image} alt={product.name} />
+      <div className="nome">{product.name}</div>
+      <div className="descricao"> {product.description} </div>
+      <div className="preco">
+        <span>R$ </span>
+        {product.price}
+      </div>
+      <div className="button">
       <Button
         onClick={isFavoritesList ? handleRemoveFavorite : handleSetFavorite}
         text={
-          isFavoritesList ? "Remover dos favoritos" : "Adicionar aos favoritos"
+          isFavoritesList ? "X" : "❤️"
         }
-        size="small"
+        size="ball"
       />
+      </div>
     </Styled.CardContainer>
   );
 };
