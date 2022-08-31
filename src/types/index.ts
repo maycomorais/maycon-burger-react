@@ -24,12 +24,22 @@ export interface Table {
 }
 
 export interface User {
-  id?: string;
+  id: string;
   name: string;
   email: string;
-  password?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
+  ddd: number;
+  tellphone: number;
+  postalCode: number;
+  street: string;
+  complement: string;
+  number: number;
+  district: string;
+  city: string;
+  state: string;
+  password: string;
+  isAdmin: boolean;
+  createdAt: Date;
+  uptadedAt: Date;
 }
 
 export interface Favorite {

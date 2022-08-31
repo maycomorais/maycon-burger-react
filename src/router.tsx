@@ -17,6 +17,7 @@ const Router = () => {
           <Route path="/settings/products" element={<SettingsProducts />} />
           <Route path="/settings/categories" element={<SettingsCategories />} />
           <Route path="/settings/tables" element={<SettingsTables />} />
+          <Route path="/settings/users" element={<SettingsTables />} />
         </>
       ) : (
         <Route path="/login" element={<Login />} />
